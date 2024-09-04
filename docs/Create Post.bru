@@ -1,0 +1,19 @@
+meta {
+  name: Create Post
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Zod the swiss army knife",
+    "content": "Some random contents",
+    "tags": ["Test", "Zod", "validation"]
+  }
+}
